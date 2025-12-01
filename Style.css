@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    display: flex;
+    background: #f4f4f4;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #222;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #444;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 220px;
+    padding: 40px;
+    width: calc(100% - 220px);
+}
+
+/* Ảnh avatar */
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    transition: transform 0.3s ease;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.avatar:hover {
+    transform: scale(1.08);
+}
+
+/* Nội dung giới thiệu */
+.intro {
+    margin-top: 260px;
+    font-size: 20px;
+    line-height: 1.5;
+}
